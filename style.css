@@ -1,57 +1,77 @@
-header {
-  display: flex;
-  width: 1280px;
-  height: 834px;
-  background-image: url("Img/Header_background.png");
-  position: relative;
-  justify-content: space-between;
+@font-face {
+    font-family: Lavanderia;
+    src: url('./fonts/Lavanderia.otf');
 }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.first-layout {
+    height: 834px;
+    background-image: url("Img/Header_background.png");
+}
+
 .upper-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 1280px;
-  height: 93px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
-  background-color: #ffffff;
-  opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.9;
+    height: 60px;
+    width: 800px;
 }
-.logo p {
-  width: 130px;
-  height: 52px;
-  color: #000000;
-  font-family: Lavanderia;
-  font-size: 41px;
-  font-weight: 400;
-  }
-.upp_menu {
-  width: 60%;
+
+.logo {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 400;
+    display: flex;
+    text-decoration: none;
+    font-family: Lavanderia;
 }
-.upp_menu nav {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  float: left;
+
+.logo-pink {
+    color: #624b4d;
 }
-.upp_menu  nav li a {
-  font-family: "Segoe UI";
-  font-size: 17px;
-  font-weight: 400;
-  color: #454545;
-  text-decoration: none;
-  margin-left: 17px;
-  margin-right: 17px;
+
+.nav-panel {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
 }
+
+.upp-menu-link {
+    color: #454545;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
 .upp-menu-btn {
-  width: 87px;
-  height: 27px;
-  background: url(icons/LoginBut.png);
-  padding-right: 17px;
-  padding-left: 29px;
-  padding-bottom: 5px;
-  margin-left: 60px;
+    align-items: center;
+    display: flex;
+    background: red;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-left: 15px;
+    border: 0;
+    border-radius: 4px;
 }
-.upp-menu-btn ul li a {
-  color: #ffffff;
+
+.login-icon {
+    margin-right: 10px;
 }
+
