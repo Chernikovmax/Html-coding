@@ -279,6 +279,7 @@ html, body {
 
 .footer {
   display: flex;
+  justify-content: center;
   height: 258px;
   background-image: url("Img/footer-background.png");
   background-repeat: cover;
@@ -288,7 +289,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 37px 0 0 197px;
+  margin: 37px 0 0 177px;
   list-style-type: none;
 }
 
@@ -450,4 +451,5 @@ html, body {
   font-family: "Calibri";
   font-size: 15px;
   font-weight: 300;
+  margin: 30px 0 0 73px;
 }
